@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kamesh — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">kamesh<span>.dev</span></div>
+    <ul class="navlinks">
+      <li><a href="#about">about</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">available for internships &amp; junior roles</div>
+    <h1 class="title node-line" id="nameLine"></h1>
+    <p class="subtitle">2nd-year B.E. Computer Science Engineering student building a foundation in Java, C and Python — motivated to turn data-structure fundamentals into real, working software.</p>
+    <div class="role-tag">head → <b>CSE Student</b> → <b>Coimbatore, TN</b></div>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="mailto:kkameshkumar915@gmail.com">Email me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="sec-head reveal">
+      <span class="sec-index">01</span>
+      <span class="sec-title">About</span>
+    </div>
+    <p class="about-text reveal">I'm <strong>Kamesh</strong>, currently in my second year of <strong>B.E. Computer Science Engineering</strong> at Nehru Institute of Engineering and Technology, Coimbatore, carrying a <strong>CGPA of 8.52</strong>. I enjoy programming in Java, C and Python, and I'm steadily building up my understanding of data structures and problem-solving. I'm looking for opportunities — internships, projects, mentorship — where I can apply what I've learned and pick up real practical experience in software development.</p>
+  </section>
+
+  <section id="education">
+    <div class="sec-head reveal">
+      <span class="sec-index">02</span>
+      <span class="sec-title">Education</span>
+    </div>
+    <div class="timeline reveal" id="timeline">
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-year">SSLC · 10th Grade</div>
+        <div class="t-school">Guna Matriculation Higher Secondary School</div>
+        <div class="t-place">Coimbatore, Tamil Nadu</div>
+        <div class="t-score">82.5%</div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-year">Higher Secondary · 12th Grade</div>
+        <div class="t-school">Guna Matriculation Higher Secondary School</div>
+        <div class="t-place">Coimbatore, Tamil Nadu</div>
+        <div class="t-score">80%</div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-dot"></div>
+        <div class="t-year">2nd Year · In Progress</div>
+        <div class="t-school">B.E. Computer Science Engineering</div>
+        <div class="t-place">Nehru Institute of Engineering and Technology, Coimbatore</div>
+        <div class="t-score">CGPA 8.52</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head reveal">
+      <span class="sec-index">03</span>
+      <span class="sec-title">Skills</span>
+    </div>
+
+    <div class="array-block reveal">
+      <div class="array-label"><b>languages</b> = [</div>
+      <div class="array-row">
+        <div class="cell"><span class="idx">0</span>Java</div>
+        <div class="cell"><span class="idx">1</span>C</div>
+        <div class="cell"><span class="idx">2</span>Python</div>
+      </div>
+      <div class="array-label">]</div>
+    </div>
+
+    <div class="array-block reveal">
+      <div class="array-label"><b>foundations</b> = [</div>
+      <div class="array-row">
+        <div class="cell"><span class="idx">0</span>Data Structures</div>
+        <div class="cell"><span class="idx">1</span>Problem Solving</div>
+      </div>
+      <div class="array-label">]</div>
+    </div>
+
+    <div class="array-block reveal">
+      <div class="array-label"><b>spoken</b></div>
+      <div class="pill-row">
+        <div class="pill">Tamil</div>
+        <div class="pill">English</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head reveal">
+      <span class="sec-index">04</span>
+      <span class="sec-title">Contact</span>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="c-card">
+        <div class="c-label">Phone</div>
+        <div class="c-value"><a href="tel:9042784309">9042784309</a></div>
+      </div>
+      <div class="c-card">
+        <div class="c-label">Email</div>
+        <div class="c-value"><a href="mailto:kkameshkumar915@gmail.com">kkamesh915@gmail.com</a></div>
+      </div>
+      <div class="c-card">
+        <div class="c-label">Location</div>
+        <div class="c-value">Coimbatore, Tamil Nadu</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>built by Kamesh — Coimbatore, Tamil Nadu</footer>
+</div>
+
+<script>
+  function toggleChat(){
+    const box=document.getElementById("chat-box");
+    box.style.display=(box.style.display==="block")?"none":"block";
+}
+
+function botReply(msg){
+
+    msg=msg.toLowerCase();
+
+    if(msg.includes("hello")||msg.includes("hi"))
+        return "Hello 👋 Welcome to Kamesh's Portfolio.";
+
+    if(msg.includes("who are you"))
+        return "I'm Kamesh, a 2nd Year B.E. Computer Science Engineering student at Nehru Institute of Engineering and Technology, Coimbatore.";
+
+    if(msg.includes("about"))
+        return "Kamesh enjoys Java, C and Python programming and is building strong Data Structure and Problem Solving skills.";
+
+    if(msg.includes("education"))
+        return "Currently pursuing B.E. Computer Science Engineering with a CGPA of 8.52.";
+
+    if(msg.includes("cgpa"))
+        return "Current CGPA: 8.52";
+
+    if(msg.includes("skills"))
+        return "Skills: Java, C, Python, Data Structures and Problem Solving.";
+
+    if(msg.includes("language"))
+        return "Programming Languages: Java, C, Python. Spoken Languages: Tamil and English.";
+
+    if(msg.includes("java"))
+        return "Java is Kamesh's primary programming language.";
+
+    if(msg.includes("python"))
+        return "Kamesh also has knowledge of Python.";
+
+    if(msg.includes("c language")||msg==="c")
+        return "Kamesh knows C programming.";
+
+    if(msg.includes("location")||msg.includes("where"))
+        return "Kamesh is from Coimbatore, Tamil Nadu.";
+
+    if(msg.includes("college"))
+        return "Nehru Institute of Engineering and Technology, Coimbatore.";
+
+    if(msg.includes("contact"))
+        return "📞 9042784309\n📧 kkameshkumar915@gmail.com";
+
+    if(msg.includes("email"))
+        return "Email: kkameshkumar915@gmail.com";
+
+    if(msg.includes("phone"))
+        return "Phone: 9042784309";
+
+    if(msg.includes("internship"))
+        return "Kamesh is available for internships and junior software roles.";
+
+    if(msg.includes("resume"))
+        return "You can add your resume download button here.";
+
+    if(msg.includes("thank"))
+        return "You're welcome 😊";
+
+    return "Sorry, I don't know that yet. Try asking about my skills, education, CGPA, college, contact, Java, Python, or location.";
+}
+
+function sendMessage(){
+
+    const input=document.getElementById("userInput");
+
+    const text=input.value.trim();
+
+    if(text==="") return;
+
+    const messages=document.getElementById("chat-messages");
+
+    messages.innerHTML+=`<div class="user">${text}</div>`;
+
+    const reply=botReply(text);
+
+    setTimeout(()=>{
+        messages.innerHTML+=`<div class="bot">${reply}</div>`;
+        messages.scrollTop=messages.scrollHeight;
+    },500);
+
+    input.value="";
+}
+  // Build hero name as a linked-list: node → node → node
+  const parts = ["Kamesh", "CSE'28", "Coimbatore"];
+  const line = document.getElementById('nameLine');
+  parts.forEach((p, i) => {
+    const node = document.createElement('span');
+    node.className = 'node';
+    node.style.animationDelay = (i * 0.35) + 's';
+    node.textContent = p;
+    line.appendChild(node);
+    if (i < parts.length - 1) {
+      const arrow = document.createElement('span');
+      arrow.className = 'arrow';
+      arrow.style.animationDelay = (i * 0.35 + 0.25) + 's';
+      arrow.textContent = '→';
+      line.appendChild(arrow);
+    }
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .t-item, .cell, .pill');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, order) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('in'), 0);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // stagger cells within each array row
+  document.querySelectorAll('.array-row').forEach(row => {
+    [...row.children].forEach((cell, i) => {
+      cell.style.transitionDelay = (i * 0.08) + 's';
+    });
+  });
+  document.querySelectorAll('.pill-row').forEach(row => {
+    [...row.children].forEach((cell, i) => {
+      cell.style.transitionDelay = (i * 0.08) + 's';
+    });
+  });
+</script>
+<!-- Chat Button -->
+<div id="chat-btn" onclick="toggleChat()">💬</div>
+
+<!-- Chatbot -->
+<div id="chat-box">
+    <div id="chat-header">
+        <span>Kamesh AI</span>
+        <button onclick="toggleChat()">✖</button>
+    </div>
+
+    <div id="chat-messages">
+        <div class="bot">
+            👋 Hello! I'm Kamesh's Portfolio Assistant.
+            <br><br>
+            Try asking:
+            <br>• Who are you?
+            <br>• What are your skills?
+            <br>• Tell me about your education
+            <br>• Where are you from?
+            <br>• What languages do you know?
+            <br>• How can I contact you?
+        </div>
+    </div>
+
+    <div id="chat-input">
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask something..."
+            onkeypress="if(event.key==='Enter') sendMessage()"
+        >
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+</body>
+</html>
